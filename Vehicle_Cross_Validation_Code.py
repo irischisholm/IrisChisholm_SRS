@@ -39,8 +39,8 @@ print(f"R-squared score: {r2}") #the closer the R^2 score is to 1, the more accu
 
 #LEAVE-ONE-OUT CROSS VALIDATION (LOOCV):
 
-X_loo = X.head(10)
-y_loo = y.head(10)
+X_loo = X.head(10000)
+y_loo = y.head(10000)
 
 loo = LeaveOneOut()
 loo_errors = []
